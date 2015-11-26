@@ -1,7 +1,7 @@
 ﻿Shader "Custom/DiffuseShader" {
 	Properties {
 		_Color ("Color", Color) = (1,1,1,1)
-		_MainTex ("Albedo (RGB)", 2D) = "white" {}
+		_MainTex ("Albedo (RGB)", 2D) = "red" {}
 	}
 	SubShader {
 		Tags { "RenderType"="Opaque" }
