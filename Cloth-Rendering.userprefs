@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Shader\DiffuseShader.shader">
     <Files>
-      <File FileName="Assets\Shader\DiffuseShader.shader" Line="35" Column="64" />
+      <File FileName="Assets\Shader\DiffuseShader.shader" Line="20" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
