@@ -1,7 +1,8 @@
 ﻿Shader "Custom/DiffuseShader" {
 	Properties {
 		_Color ("Color", Color) = (1,1,1,1)
-		_MainTex ("Albedo (RGB)", 2D) = "red" {}
+		_MainTex ("Albedo (RGB)", 2D) = "white" {}
+        _Bump ("Bump", 2D) = "bump" {}
 	}
 	SubShader {
 		Tags { "RenderType"="Opaque" }
@@ -15,16 +16,21 @@
 		#pragma target 3.0
 
 		sampler2D _MainTex;
+        sampler2D _Bump;  
+		fixed4 _Color;
 
 		struct Input {
 			float2 uv_MainTex;
+            float2 uv_Bump;
 		};
 
-		fixed4 _Color;
 
 		void surf (Input IN, inout SurfaceOutput o) {
 			// Albedo comes from a texture tinted by color
-			fixed4 c = tex2D (_MainTex, IN.uv_MainTex);
+			fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
+			
+            o.Normal = UnpackNormal(tex2D(_Bump, IN.uv_Bump));
+			
 			o.Albedo = c.rgb;
 			o.Alpha = c.a;
 		}
