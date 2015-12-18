@@ -1,10 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Shader\DiffuseShader.shader">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Shader\VertexShader.shader">
     <Files>
-      <File FileName="Assets\Shader\PhongShader.shader" Line="55" Column="8" />
-      <File FileName="Assets\Shader\BlinPhongShader.shader" Line="24" Column="24" />
-      <File FileName="Assets\Shader\DiffuseShader.shader" Line="5" Column="39" />
+      <File FileName="Assets\Shader\VertexShader.shader" Line="41" Column="56" />
+      <File FileName="Assets\Shader\NormalShader.shader" Line="27" Column="63" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
