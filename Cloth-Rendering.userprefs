@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Shader\VertexShader.shader">
     <Files>
-      <File FileName="Assets\Shader\VertexShader.shader" Line="41" Column="56" />
+      <File FileName="Assets\Shader\VertexShader.shader" Line="42" Column="26" />
       <File FileName="Assets\Shader\NormalShader.shader" Line="27" Column="63" />
+      <File FileName="Assets\Shader\VertexShader2.shader" Line="17" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

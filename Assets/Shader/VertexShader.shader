@@ -39,7 +39,7 @@
 		void vert (inout appdata_full v) {
 			fixed3 normal = UnpackNormal(tex2Dlod(_Bump, v.texcoord));
 			//v.normal.xyz = (float3) normal;
-			v.vertex.y += normal.z * _Amount;// * (sin(v.vertex.x) * sin(v.vertex.z * 100));
+			v.vertex.xyz += normal * _Amount;// * (sin(v.vertex.x) * sin(v.vertex.z * 100));
 		}
 		
 		ENDCG
