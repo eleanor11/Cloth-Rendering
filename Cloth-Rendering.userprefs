@@ -1,15 +1,17 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Shader\StandardShader.shader">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\ObjControl.cs">
     <Files>
-      <File FileName="Assets\Shader\BlinPhongShader.shader" Line="5" Column="60" />
-      <File FileName="Assets\Shader\CookTorranceShader.shader" Line="3" Column="59" />
-      <File FileName="Assets\Shader\LambertShader.shader" Line="22" Column="20" />
-      <File FileName="Assets\Shader\NormalShader.shader" Line="27" Column="66" />
-      <File FileName="Assets\Shader\PhongShader.shader" Line="25" Column="24" />
-      <File FileName="Assets\Shader\VertexShader.shader" Line="33" Column="58" />
-      <File FileName="Assets\Shader\DiffuseShader.shader" Line="32" Column="58" />
-      <File FileName="Assets\Shader\StandardShader.shader" Line="29" Column="20" />
+      <File FileName="Assets\Script\ObjControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\Shader\BlinPhongShader.shader" Line="1" Column="1" />
+      <File FileName="Assets\Shader\CookTorranceShader.shader" Line="1" Column="1" />
+      <File FileName="Assets\Shader\LambertShader.shader" Line="1" Column="1" />
+      <File FileName="Assets\Shader\NormalShader.shader" Line="1" Column="1" />
+      <File FileName="Assets\Shader\PhongShader.shader" Line="1" Column="1" />
+      <File FileName="Assets\Shader\VertexShader.shader" Line="1" Column="1" />
+      <File FileName="Assets\Shader\DiffuseShader.shader" Line="1" Column="1" />
+      <File FileName="Assets\Shader\StandardShader.shader" Line="1" Column="1" />
+      <File FileName="Assets\Shader\ClothShader.shader" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
