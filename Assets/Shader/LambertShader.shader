@@ -1,8 +1,9 @@
 ﻿Shader "Custom/LambertShader" {
 	Properties {
-		_Color ("Color", Color) = (1, 1, 0, 1)
+		_Color ("Color", Color) = (1, 1, 1, 1)
 		_MainTex ("Albedo (RGB)", 2D) = "white" {}
         _Bump ("Bump", 2D) = "bump" {}
+		_MainTint ("Diffuse Tint", Color) = (0.75, 0.25, 0.75, 1)
 	}
 	SubShader {
 		Tags { "RenderType"="Opaque" }
@@ -18,6 +19,7 @@
 		sampler2D _MainTex;
         sampler2D _Bump;  
 		fixed4 _Color;
+		fixed4 _MainTint;
 		
 
 		struct Input {
@@ -28,7 +30,7 @@
 
 		void surf (Input IN, inout SurfaceOutput o) {
 			// Albedo comes from a texture tinted by color
-			fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
+			fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _MainTint;
 
             o.Normal = UnpackNormal(tex2D(_Bump, IN.uv_Bump));
             

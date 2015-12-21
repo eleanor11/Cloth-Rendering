@@ -1,9 +1,10 @@
 ﻿Shader "Custom/VertexShader" {
 	Properties {
-		_Color ("Color", Color) = (1,1,1,1)
+		_Color ("Color", Color) = (1, 1, 1, 1)
 		_MainTex ("Albedo (RGB)", 2D) = "white" {}
         _Bump ("Bump", 2D) = "bump" {}
 		_Amount("Extrusion Amount", Range(-5, 5)) = 0.5
+		_MainTint ("Diffuse Tint", Color) = (0.75, 0.25, 0.75, 1)
 	}
 	SubShader {
 		Tags { "RenderType"="Opaque" }
@@ -20,6 +21,7 @@
         sampler2D _Bump;  
 		float _Amount;
 		fixed4 _Color;
+		fixed4 _MainTint;
 
 		struct Input {
 			float2 uv_MainTex;
@@ -28,7 +30,7 @@
 
 		void surf (Input IN, inout SurfaceOutput o) {
 			// Albedo comes from a texture tinted by color
-			fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
+			fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _MainTint;
 
             o.Normal = UnpackNormal(tex2D(_Bump, IN.uv_Bump));
 			
@@ -39,7 +41,7 @@
 		void vert (inout appdata_full v) {
 			fixed3 normal = UnpackNormal(tex2Dlod(_Bump, v.texcoord));
 			//v.normal.xyz = (float3) normal;
-			v.vertex.xyz += normal * _Amount;// * (sin(v.vertex.x) * sin(v.vertex.z * 100));
+			v.vertex.x += normal.x * _Amount;// * (sin(v.vertex.x) * sin(v.vertex.z * 100));
 		}
 		
 		ENDCG

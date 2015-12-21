@@ -1,12 +1,12 @@
 ﻿Shader "Custom/CookTorranceShader" {
 	Properties {
-		_MainTint ("Diffuse Tint", Color) = (1, 1, 1, 1)
+		_MainTint ("Diffuse Tint", Color) = (0.75, 0.25, 0.75, 1)
 		_MainTex ("Albedo (RGB)", 2D) = "white" {}
         _Bump ("Bump", 2D) = "bump" {}
         _RoughnessTex ("Roughness texture", 2D) = "" {}
         _Roughness ("Roughness", Range(0, 1)) = 0.5
         _SpecularColor ("Specular Color", Color) = (1, 1, 1, 1)
-        _SpecPower ("Specular Power", Range(0, 30)) = 2
+        _SpecPower ("Specular Power", Range(0, 30)) = 12
         _Fresnel ("Fresnel Value", Range(0, 1.0)) = 0.05
 	}
 	SubShader {

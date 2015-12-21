@@ -2,9 +2,9 @@
 	Properties {
 		_MainTex ("Albedo (RGB)", 2D) = "white" {}
         _Bump ("Bump", 2D) = "bump" {}
-		_MainTint ("Diffuse Tint", Color) = (1, 1, 1, 1)
+		_MainTint ("Diffuse Tint", Color) = (0.75, 0.25, 0.75, 1)
 		_SpecularColor ("Specular Color", Color) = (1, 1, 1, 1)
-		_SpecularPower ("Spercular Power", Range(0, 30)) = 1
+		_SpecularPower ("Spercular Power", Range(0, 30)) = 12
 		
 	}
 	SubShader {

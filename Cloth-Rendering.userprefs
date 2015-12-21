@@ -1,10 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Shader\NormalShader.shader">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Shader\StandardShader.shader">
     <Files>
-      <File FileName="Assets\Shader\VertexShader.shader" Line="42" Column="4" />
-      <File FileName="Assets\Shader\NormalShader.shader" Line="27" Column="63" />
-      <File FileName="Assets\Shader\VertexShader2.shader" Line="1" Column="1" />
+      <File FileName="Assets\Shader\BlinPhongShader.shader" Line="5" Column="60" />
+      <File FileName="Assets\Shader\CookTorranceShader.shader" Line="3" Column="59" />
+      <File FileName="Assets\Shader\LambertShader.shader" Line="22" Column="20" />
+      <File FileName="Assets\Shader\NormalShader.shader" Line="27" Column="66" />
+      <File FileName="Assets\Shader\PhongShader.shader" Line="25" Column="24" />
+      <File FileName="Assets\Shader\VertexShader.shader" Line="33" Column="58" />
+      <File FileName="Assets\Shader\DiffuseShader.shader" Line="32" Column="58" />
+      <File FileName="Assets\Shader\StandardShader.shader" Line="29" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
