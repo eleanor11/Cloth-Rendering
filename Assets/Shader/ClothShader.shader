@@ -1,6 +1,6 @@
 ﻿Shader "Custom/ClothShader" {
 	Properties {		
-		_MainTint ("Global Tint", Color) = (0.75, 0.25, 0.75, 1)
+		_MainTint ("Global Tint", Color) = (0.75, 0.5, 0.75, 1)
 		_BumpMap ("Normal Map", 2D) = "bump" {}
 		_DetailBump ("Detail Normal Map", 2D) = "bump" {}
 		_DetailTex ("Fabric Weave", 2D) = "white" {}
