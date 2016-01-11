@@ -52,15 +52,18 @@
      <None Include="Assets\Shader\NormalShader.shader" />
      <None Include="Assets\Shader\StandardShader.shader" />
      <None Include="Assets\models\bed\archibase.net.txt" />
+     <None Include="Assets\Shader\MyShader2.shader" />
      <None Include="Assets\models\cushion\archibase.net.txt" />
      <None Include="Assets\Shader\DiffuseShader.shader" />
      <None Include="Assets\Shader\LambertShader.shader" />
      <None Include="Assets\Shader\VertexShader2.shader" />
+     <None Include="Assets\Shader\MyShader1.shader" />
      <None Include="Assets\Shader\VertexShader.shader" />
      <None Include="Assets\models\pillow\archibase.net.txt" />
      <None Include="Assets\Shader\CookTorranceShader.shader" />
      <None Include="Assets\Shader\ClothShader.shader" />
      <None Include="Assets\Shader\PhongShader.shader" />
+     <None Include="Assets\Shader\MyShader0.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/develop/tools/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
