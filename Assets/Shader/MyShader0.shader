@@ -49,6 +49,8 @@
 			fixed3 finalNormals = float3(normals.x + detailNormals.x, normals.y + detailNormals.y, normals.z + detailNormals.z);
 			
 			o.Normal = normalize(finalNormals);
+			o.Specular = _SpecWidth;
+			o.Gloss = _SpecIntesity;
 			
 			o.Albedo = c.rgb * _MainTint;
 			o.Alpha = t;

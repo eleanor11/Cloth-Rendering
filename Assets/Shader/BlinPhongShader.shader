@@ -40,6 +40,7 @@
 		}
 		
 		inline fixed4 LightingPhong (SurfaceOutput s, fixed3 lightDir, half3 viewDir, fixed atten) {
+		
 			float diff = dot(s.Normal, lightDir);
 			float3 halfVector = normalize(lightDir + viewDir);
 			float spec = pow(max(0, dot(halfVector, s.Normal)), _SpecularPower);
