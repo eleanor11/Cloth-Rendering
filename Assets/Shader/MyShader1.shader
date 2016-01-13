@@ -1,4 +1,4 @@
-﻿Shader "Custom/MyShader1" {
+﻿Shader "Eleanor/MyShader1" {
 	Properties {		
 		_MainTint ("Global Tint", Color) = (1.0, 0.55, 0.55, 1)
 		_BumpMap ("Normal Map", 2D) = "bump" {}
@@ -48,9 +48,15 @@
 			fixed3 detailNormals = UnpackNormal(tex2D(_DetailBump, IN.uv_DetailBump)).rgb;
 			fixed3 finalNormals = float3(normals.x + detailNormals.x, normals.y + detailNormals.y, normals.z + detailNormals.z);
 			
-			o.Normal = normalize(finalNormals);
-			o.Specular = _SpecWidth;
-			o.Gloss = _SpecIntesity;
+			if (t == 0){
+				o.Normal = normals;
+			}
+			else {
+				o.Normal = normalize(finalNormals);
+				o.Specular = _SpecWidth;
+				o.Gloss = _SpecIntesity;
+			}
+			
 			
 			o.Albedo = c.rgb * _MainTint;
 			o.Alpha = t;

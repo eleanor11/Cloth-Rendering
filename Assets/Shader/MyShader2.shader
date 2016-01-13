@@ -1,4 +1,4 @@
-﻿Shader "Custom/MyShader2" {
+﻿Shader "Eleanor/MyShader2" {
 	Properties {		
 		_MainTint ("Global Tint", Color) = (1.0, 0.55, 0.55, 1)
 		_BumpMap ("Normal Map", 2D) = "bump" {}
@@ -54,7 +54,7 @@
 				//Phong
 				float diff = dot(s.Normal, lightDir);
 				float3 reflectionVector = normalize(2.0 * s.Normal * diff - lightDir);
-				float spec = pow(max(0, dot(reflectionVector, viewDir)), _SpecularPower * 200);
+				float spec = pow(max(0, dot(reflectionVector, viewDir)), _SpecularPower * 500);
 				float3 finalSpec = _SpecularColor * spec;
 				
 				c.rgb = (s.Albedo * _LightColor0.rgb * diff) + (_LightColor0.rgb * finalSpec);

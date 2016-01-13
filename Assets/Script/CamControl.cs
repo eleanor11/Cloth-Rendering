@@ -14,14 +14,14 @@ public class CamControl : MonoBehaviour {
 	public float translateSpeed = 0.1f;
 	public float baseHeight = 1f;
 
-	public float scaleSpeed = 10f;
+	public float scaleSpeed = 0.1f;
 	private float scale = 0f;
 	private float scaleMax;
 
 	// Use this for initialization
 	void Start () {
 		
-		scaleMax = scaleSpeed * 4;
+		scaleMax = scaleSpeed * 10;
 	}
 	
 	// Update is called once per frame

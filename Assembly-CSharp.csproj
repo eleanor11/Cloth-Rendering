@@ -50,6 +50,7 @@
      <Compile Include="Assets\Script\CamControl1.cs" />
      <None Include="Assets\Shader\BlinPhongShader.shader" />
      <None Include="Assets\Shader\NormalShader.shader" />
+     <None Include="Assets\Shader\MyShader3.shader" />
      <None Include="Assets\Shader\StandardShader.shader" />
      <None Include="Assets\models\bed\archibase.net.txt" />
      <None Include="Assets\Shader\MyShader2.shader" />
