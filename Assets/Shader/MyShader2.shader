@@ -6,6 +6,7 @@
 		_BitMap ("Bit Map", 2D) = "white" {}
 		_SpecularColor ("Specular Color", Color) = (1, 1, 1, 1)
 		_SpecularPower ("Spercular Power", Range(0, 1)) = 0.75
+		_Check ("Check", Range(0, 1)) = 0
 	}
 	SubShader {
 		Tags { "RenderType"="Opaque" }
@@ -24,6 +25,7 @@
 		float4 _MainTint;
 		float4 _SpecularColor;
 		float _SpecularPower;
+		bool _Check;
 
 		struct Input {
 			float2 uv_BumpMap;
@@ -45,12 +47,13 @@
 		
 			fixed4 c;
 			
-			if (s.Alpha == 0){
+			if (s.Alpha == _Check){
+				//normal
 				float diff = dot(s.Normal, lightDir);
 				c.rgb = (s.Albedo * _LightColor0.rgb * diff);
 				c.a = 1.0;
 			}
-			else {
+			else if (s.Alpha == 1 - _Check){
 				//Phong
 				float diff = dot(s.Normal, lightDir);
 				float3 reflectionVector = normalize(2.0 * s.Normal * diff - lightDir);
@@ -58,6 +61,12 @@
 				float3 finalSpec = _SpecularColor * spec;
 				
 				c.rgb = (s.Albedo * _LightColor0.rgb * diff) + (_LightColor0.rgb * finalSpec);
+				c.a = 1.0;
+			}
+			else {
+				//normal
+				float diff = dot(s.Normal, lightDir);
+				c.rgb = (s.Albedo * _LightColor0.rgb * diff);
 				c.a = 1.0;
 			}
 			

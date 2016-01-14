@@ -65,11 +65,14 @@
 			fixed4 c;
 			
 			if (s.Alpha == 1){
+				//normal
 				float diff = dot(s.Normal, lightDir);
 				c.rgb = (s.Albedo * _LightColor0.rgb * diff);
 				c.a = 1.0;
 			}
 			else {
+				//cloth
+			
 				//Create lighting vectors here  
 				viewDir = normalize(viewDir);
 				lightDir = normalize(lightDir);

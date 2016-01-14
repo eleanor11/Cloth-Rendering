@@ -6,6 +6,7 @@
 		_DetailBump ("Detail Normal Map", 2D) = "bump" {}
 		_DetailTex ("Fabric Weave", 2D) = "white" {}
 		_BitMap ("Bit Map", 2D) = "white" {}
+		_Check ("Check", Range(0, 1)) = 0
 		_SpecularColor ("Specular Color", Color) = (1, 1, 1, 1)
 		_SpecularPower ("Spercular Power", Range(0, 1)) = 0.75
 		_FresnelPower ("Fresnel Power", Range(0, 12)) = 3
@@ -37,6 +38,7 @@
 		float _RimPower;
 		float _SpecIntesity;
 		float _SpecWidth;
+		float _Check;
 
 		struct Input {
 			float2 uv_BumpMap;
@@ -61,7 +63,7 @@
 				o.Albedo = c.rgb * _MainTint;
 			}
 			else {
-				o.Normal = normals;
+				o.Normal = normalize(normals);
 				o.Albedo = c.rgb * _SubTint;
 			}
             
@@ -71,7 +73,9 @@
 		
 			fixed4 c;
 			
-			if (s.Alpha == 0){
+			if (s.Alpha == _Check){
+				//cloth
+				
 				//Create lighting vectors here  
 				viewDir = normalize(viewDir);
 				lightDir = normalize(lightDir);
@@ -81,6 +85,7 @@
 				//Create Specular
 				float NdotH = max(0, dot(s.Normal, halfVec));
 				float spec = pow(NdotH, s.Specular * 128.0) * s.Gloss;
+				
 			
 				//Create Fresnel
 				float HdotV = pow(1 - max(0, dot(halfVec, viewDir)), _FresnelPower);
@@ -91,7 +96,7 @@
 				c.rgb = (s.Albedo * NdotL * _LightColor0.rgb) + (spec * (finalSpecMask * _FresnelColor)) * (atten * 2);
 				c.a = 1.0;
 			}
-			else {
+			else if (s.Alpha == 1 - _Check){
 				//Phong
 				float diff = dot(s.Normal, lightDir);
 				float3 reflectionVector = normalize(2.0 * s.Normal * diff - lightDir);
@@ -99,6 +104,13 @@
 				float3 finalSpec = _SpecularColor * spec;
 				
 				c.rgb = (s.Albedo * _LightColor0.rgb * diff) + (_LightColor0.rgb * finalSpec);
+				//c.rgb = 1.0;
+				c.a = 1.0;
+			}
+			else {
+				//normal
+				float diff = dot(s.Normal, lightDir);
+				c.rgb = (s.Albedo * _LightColor0.rgb * diff);
 				c.a = 1.0;
 			}
 			

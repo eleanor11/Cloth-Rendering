@@ -1,14 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Shader\MyShader1.shader">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Shader\NewShader 1.shader">
     <Files>
-      <File FileName="Assets\Shader\MyShader2.shader" Line="37" Column="45" />
-      <File FileName="Assets\Shader\MyShader0.shader" Line="57" Column="5" />
-      <File FileName="Assets\Shader\ClothShader.shader" Line="1" Column="1" />
-      <File FileName="Assets\Shader\BlinPhongShader.shader" Line="1" Column="1" />
-      <File FileName="Assets\Shader\LambertShader.shader" Line="1" Column="1" />
-      <File FileName="Assets\Shader\MyShader1.shader" Line="70" Column="13" />
-      <File FileName="Assets\Shader\PhongShader.shader" Line="59" Column="1" />
+      <File FileName="Assets\Shader\MyShader3.shader" Line="50" Column="48" />
+      <File FileName="Assets\Shader\MyShader2.shader" Line="1" Column="1" />
+      <File FileName="Assets\Shader\MyShader0.shader" Line="1" Column="1" />
+      <File FileName="Assets\Shader\MyShader1.shader" Line="1" Column="1" />
+      <File FileName="Assets\Shader\NewShader.shader" Line="72" Column="38" />
+      <File FileName="Assets\Shader\NewShader 1.shader" Line="89" Column="38" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

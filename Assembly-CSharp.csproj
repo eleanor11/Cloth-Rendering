@@ -56,9 +56,11 @@
      <None Include="Assets\Shader\MyShader2.shader" />
      <None Include="Assets\models\cushion\archibase.net.txt" />
      <None Include="Assets\Shader\DiffuseShader.shader" />
+     <None Include="Assets\Shader\NewShader.shader" />
      <None Include="Assets\Shader\LambertShader.shader" />
      <None Include="Assets\Shader\VertexShader2.shader" />
      <None Include="Assets\Shader\MyShader1.shader" />
+     <None Include="Assets\Shader\NewShader 1.shader" />
      <None Include="Assets\Shader\VertexShader.shader" />
      <None Include="Assets\models\pillow\archibase.net.txt" />
      <None Include="Assets\Shader\CookTorranceShader.shader" />
