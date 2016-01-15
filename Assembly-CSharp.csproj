@@ -54,6 +54,7 @@
      <None Include="Assets\Shader\StandardShader.shader" />
      <None Include="Assets\models\bed\archibase.net.txt" />
      <None Include="Assets\Shader\MyShader2.shader" />
+     <None Include="Assets\Shader\NewShader 2.shader" />
      <None Include="Assets\models\cushion\archibase.net.txt" />
      <None Include="Assets\Shader\DiffuseShader.shader" />
      <None Include="Assets\Shader\NewShader.shader" />

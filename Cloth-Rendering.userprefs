@@ -1,12 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Shader\NewShader 1.shader">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Shader\NewShader 2.shader">
     <Files>
-      <File FileName="Assets\Shader\MyShader3.shader" Line="50" Column="48" />
+      <File FileName="Assets\Shader\NewShader 2.shader" Line="5" Column="53" />
+      <File FileName="Assets\Shader\MyShader3.shader" Line="1" Column="1" />
       <File FileName="Assets\Shader\MyShader2.shader" Line="1" Column="1" />
       <File FileName="Assets\Shader\MyShader0.shader" Line="1" Column="1" />
       <File FileName="Assets\Shader\MyShader1.shader" Line="1" Column="1" />
-      <File FileName="Assets\Shader\NewShader.shader" Line="72" Column="38" />
+      <File FileName="Assets\Shader\NewShader.shader" Line="89" Column="53" />
       <File FileName="Assets\Shader\NewShader 1.shader" Line="89" Column="38" />
     </Files>
   </MonoDevelop.Ide.Workbench>
