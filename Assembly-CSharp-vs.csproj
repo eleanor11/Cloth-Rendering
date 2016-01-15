@@ -60,6 +60,7 @@
      <None Include="Assets\Shader\NewShader.shader" />
      <None Include="Assets\Shader\LambertShader.shader" />
      <None Include="Assets\Shader\VertexShader2.shader" />
+     <None Include="Assets\models\curtain\archibase.net.txt" />
      <None Include="Assets\Shader\MyShader1.shader" />
      <None Include="Assets\Shader\NewShader 1.shader" />
      <None Include="Assets\Shader\VertexShader.shader" />
